@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Webex CC Flow Executor",
+  "version": "1.0",
+  "description": "Executes the flow your looking at.  Useful for protyping and quick debugging.",
+  "permissions": [
+    "identity",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "storage",
+    "activeTab",
+    "notifications"
+  ],
+  "options_page": "options.html",
+  "host_permissions": [
+    "https://webexapis.com/*",
+    "https://api.wxcc-us1.cisco.com/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png"
+    },
+    "default_title": "Execute This Flow"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
